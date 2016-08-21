@@ -18,11 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## This function gets input as vector from the above function and
-## gets the inverse from cache or 
-## computes inverse of a matrix and set it in cache, 
-## if inverse not available in the cache.
-## and returns the inverse
+## This function gets input as vector from the above function and returns the inverse
+## It gets the inverse from cache or computes inverse of a matrix and set it in cache (if inverse not available in the cache)
 
 cacheSolve <- function(x, ...) {
   inverseMatrix <- x$getinverse()
